@@ -2,10 +2,10 @@
 isDraft: false
 isBigHeadline: true
 isSmallHeadline: false
-title: "Understanding JavaScript Closures"
-description: "An in-depth look at closures in JavaScript and their applications."
+title: "Explorando la Aromaterapia: Beneficios y Aplicaciones"
+description: "Un recorrido detallado sobre cómo los aceites esenciales pueden transformar tu bienestar integral y potenciar la salud a través de terapias naturales."
 cover: "./imgs/js.avif"
-category: programming
+category: recursos
 publishedTime: "2024-11-11T00:00:00.000Z"
 authors: ["ahmed-khan", "jane-doe"]
 ---
@@ -18,15 +18,14 @@ A closure is the combination of a function bundled together with references to i
 
 ```js
 function outerFunction(outerVariable) {
-    return function innerFunction(innerVariable) {
-        console.log(`Outer Variable: ${outerVariable}`);
-        console.log(`Inner Variable: ${innerVariable}`);
-    };
+  return function innerFunction(innerVariable) {
+    console.log(`Outer Variable: ${outerVariable}`);
+    console.log(`Inner Variable: ${innerVariable}`);
+  };
 }
 
 const closureExample = outerFunction("I am from outerFunction");
 
 // Calling the inner function with the closure
 closureExample("I am from innerFunction");
-
 ```

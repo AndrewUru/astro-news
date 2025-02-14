@@ -1,12 +1,13 @@
 import type { Link } from "../types";
 
 export const SITE = {
-  title: "Astro News",
-  description: "A news website built with Astro",
-  author: "Mohammad Rahmani",
+  title: "Equilibrio Vital",
+  description:
+    "Equilibrio Vital es un espacio digital pensado para difundir conocimientos, experiencias y novedades en el ámbito de las terapias alternativas y el bienestar integral.",
+  author: "Andrés Tobío",
   url: "https://astro-news-six.vercel.app",
   github: "https://github.com/Mrahmani71/astro-news",
-  locale: "en-US",
+  locale: "es-ES",
   dir: "ltr",
   charset: "UTF-8",
   basePath: "/",
@@ -19,8 +20,8 @@ export const NAVIGATION_LINKS: Link[] = [
     text: "Technology",
   },
   {
-    href: "/categories/programming",
-    text: "Programming",
+    href: "/categories/recursos",
+    text: "Recursos",
   },
   {
     href: "/categories/lifestyle",
