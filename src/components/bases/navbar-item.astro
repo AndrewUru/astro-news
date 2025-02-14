@@ -11,11 +11,11 @@ function isActive(item: Link, currentPath: string) {
   const segment = currentPath.split("/")[2];
   return (
     (item.text === "Home" && currentPath === "/") ||
-    (item.text === "Articles" &&
+    (item.text === "Artículos" &&
       segment !== undefined &&
       !isNaN(Number(segment)) &&
       Number(segment) >= 1) ||
-    (item.text !== "Articles" &&
+    (item.text !== "Artículos" &&
       currentPath.split("/").includes(item.text.toLocaleLowerCase()))
   );
 }
