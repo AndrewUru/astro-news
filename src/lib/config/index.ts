@@ -16,8 +16,8 @@ export const SITE = {
 
 export const NAVIGATION_LINKS: Link[] = [
   {
-    href: "/categories/technology",
-    text: "Technology",
+    href: "/categories/noticias",
+    text: "Noticias",
   },
   {
     href: "/categories/programming",
