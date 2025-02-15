@@ -24,8 +24,8 @@ export const NAVIGATION_LINKS: Link[] = [
     text: "Eventos",
   },
   {
-    href: "/categories/lifestyle",
-    text: "Lifestyle",
+    href: "/categories/personalidades",
+    text: "Personalidades",
   },
   {
     href: "/categories/productivity",
