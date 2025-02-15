@@ -28,8 +28,8 @@ export const NAVIGATION_LINKS: Link[] = [
     text: "Personalidades",
   },
   {
-    href: "/categories/productivity",
-    text: "Productivity",
+    href: "/categories/testimonios",
+    text: "Testimonios",
   },
   {
     href: "/categories/health",
