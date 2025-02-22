@@ -1,9 +1,9 @@
 import type { Link } from "../types";
 
 export const SITE = {
-  title: "Equilibrio Vital",
+  title: "ElSaltoWeb.social",
   description:
-    "Equilibrio Vital es un espacio digital pensado para difundir conocimientos, experiencias y novedades en el ámbito de las terapias alternativas y el bienestar integral.",
+    "Potenciamos tu marca con estrategias de redes sociales y automatizaciones inteligentes..",
   author: "Andrés Tobío",
   url: "https://astro-news-six.vercel.app",
   github: "https://github.com/Mrahmani71/astro-news",
@@ -17,27 +17,27 @@ export const SITE = {
 export const NAVIGATION_LINKS: Link[] = [
   {
     href: "/categories/noticias",
-    text: "Noticias",
+    text: "Noticias y Tendencias",
   },
   {
-    href: "/categories/eventos",
-    text: "Eventos",
+    href: "/categories/recursos",
+    text: "Herramientas",
   },
   {
-    href: "/categories/personalidades",
-    text: "Personalidades",
+    href: "/categories/estrategia",
+    text: "Estrategia",
   },
   {
-    href: "/categories/testimonios",
-    text: "Testimonios",
+    href: "/categories/edicion",
+    text: "Edición",
   },
   {
-    href: "/categories/health",
-    text: "Health",
+    href: "/categories/colaboraciones",
+    text: "Colaboraciones",
   },
   {
-    href: "/categories/finance",
-    text: "Finance",
+    href: "/categories/automatizaciones",
+    text: "Automatizaciones",
   },
 ];
 export const OTHER_LINKS: Link[] = [
@@ -85,11 +85,6 @@ export const SOCIAL_LINKS: Link[] = [
     href: "httpe://www.t.me",
     text: "Telegram",
     icon: "telegram",
-  },
-  {
-    href: "https://twitter.com",
-    text: "Twitter",
-    icon: "newTwitter",
   },
   {
     href: "https://www.facebook.com",
