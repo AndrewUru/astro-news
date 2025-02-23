@@ -15,20 +15,20 @@ const { Content } = await render(entry);
 <BaseLayout entry={entry}>
   <ContentLayout>
     <Content />
-    <h2 class="text-4xl font-bold text-center mt-10">{entry.data.blocks[0].title}</h2>
     <section class="pricing-section">
+      <h2 class="text-4xl font-bold text-center mt-10 text-gray-800">{entry.data.blocks[0].title}</h2>
       <div class="pricing-container">
-        {entry.data.blocks[0].plans.map((plan, index) => (
-          <div class="pricing-card" key={index}>
+        {entry.data.blocks[0].plans.map((plan: { name: string; price: string; description: string; features: string[] }, index: number) => (
+          <div class="pricing-card">
             <h3 class="plan-name">{plan.name}</h3>
             <p class="plan-desc">{plan.description}</p>
             <span class="price">{plan.price}</span>
             <ul class="features">
-              {plan.features.map((feature, featureIndex) => (
-                <li key={featureIndex}>✅ {feature}</li>
+              {plan.features.map((feature: string, featureIndex: number) => (
+                <li>✅ {feature}</li>
               ))}
             </ul>
-            <a href={plan.button_link} class="btn">{plan.button_text}</a>
+            <a href="#" class="btn">Seleccionar</a>
           </div>
         ))}
       </div>
