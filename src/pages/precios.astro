@@ -1,0 +1,126 @@
+---
+import BaseLayout from "~/layouts/base.astro";
+import ContentLayout from "~/layouts/content.astro";
+import { getEntry, render } from "astro:content";
+
+const entry = await getEntry("views", "pricing");
+
+if (!entry) {
+  return Astro.redirect("/404");
+}
+
+const { Content } = await render(entry);
+---
+
+<BaseLayout entry={entry}>
+  <ContentLayout>
+    <Content />
+    <h2 class="text-4xl font-bold text-center mt-10">{entry.data.blocks[0].title}</h2>
+    <section class="pricing-section">
+      <div class="pricing-container">
+        {entry.data.blocks[0].plans.map((plan, index) => (
+          <div class="pricing-card" key={index}>
+            <h3 class="plan-name">{plan.name}</h3>
+            <p class="plan-desc">{plan.description}</p>
+            <span class="price">{plan.price}</span>
+            <ul class="features">
+              {plan.features.map((feature, featureIndex) => (
+                <li key={featureIndex}>✅ {feature}</li>
+              ))}
+            </ul>
+            <a href={plan.button_link} class="btn">{plan.button_text}</a>
+          </div>
+        ))}
+      </div>
+    </section>
+  </ContentLayout>
+</BaseLayout>
+
+<style>
+ .pricing-section {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Móviles: 1 columna */
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: stretch; /* Asegura que todas las tarjetas tengan la misma altura */
+}
+
+@media (min-width: 768px) {
+  .pricing-container {
+    grid-template-columns: repeat(3, 1fr); /* Escritorio: 3 columnas */
+  }
+}
+
+.pricing-card {
+  background: white;
+  color: #374151; /* Texto oscuro */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #e5e7eb; /* Borde sutil */
+  max-width: 320px; /* Controla el tamaño máximo */
+  width: 100%;
+  flex-grow: 1; /* Todas las tarjetas crecen uniformemente */
+  margin: 0 auto; /* Centra en móviles */
+}
+
+.plan-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937; /* Color más oscuro */
+}
+
+.plan-desc {
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2563eb;
+  display: block;
+  margin: 1rem 0;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.features li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+</style>

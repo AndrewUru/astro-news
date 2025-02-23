@@ -5,8 +5,9 @@ export const SITE = {
   description:
     "Potenciamos tu marca con estrategias de redes sociales y automatizaciones inteligentes..",
   author: "Andrés Tobío",
-  url: "https://astro-news-six.vercel.app",
-  github: "https://github.com/Mrahmani71/astro-news",
+  url: "https://social.elsaltoweb.es",
+  github: "https://github.com/AndrewUru",
+  instagram: "https://www.instagram.com/elsaltoweb/",
   locale: "es-ES",
   dir: "ltr",
   charset: "UTF-8",
@@ -28,42 +29,42 @@ export const NAVIGATION_LINKS: Link[] = [
     text: "Estrategia",
   },
   {
-    href: "/categories/edicion",
-    text: "Edición",
+    href: "/categories/automatizaciones",
+    text: "Automatizaciones",
   },
   {
     href: "/categories/colaboraciones",
     text: "Colaboraciones",
   },
-  {
-    href: "/categories/automatizaciones",
-    text: "Automatizaciones",
-  },
 ];
 export const OTHER_LINKS: Link[] = [
   {
     href: "/about",
-    text: "About us",
+    text: "Sobre Nosotros",
+  },
+  {
+    href: "/precios",
+    text: "Planes & Beneficios",
   },
   {
     href: "/authors",
-    text: "Authors",
+    text: "Autores",
   },
   {
     href: "/contact",
-    text: "Contact",
+    text: "Contacto",
   },
   {
     href: "/privacy",
-    text: "Privacy",
+    text: "Pólitica de Privacidad",
   },
   {
     href: "/terms",
-    text: "Terms",
+    text: "Terminos y Condiciones",
   },
   {
     href: "/cookie-policy",
-    text: "Cookie Policy",
+    text: "Pólitica de Cookies",
   },
   {
     href: "https://astro-news-six.vercel.app/rss.xml",
@@ -85,6 +86,21 @@ export const SOCIAL_LINKS: Link[] = [
     href: "httpe://www.t.me",
     text: "Telegram",
     icon: "telegram",
+  },
+  {
+    href: "https://www.instagram.com",
+    text: "Instagram",
+    icon: "instagram",
+  },
+  {
+    href: "https://www.linkedin.com",
+    text: "LinkedIn",
+    icon: "linkedin",
+  },
+  {
+    href: "https://www.youtube.com",
+    text: "YouTube",
+    icon: "youtube",
   },
   {
     href: "https://www.facebook.com",
