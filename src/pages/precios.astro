@@ -10,7 +10,16 @@ if (!entry) {
 }
 
 const { Content } = await render(entry);
-const plans = entry.data.blocks[0].plans;
+interface Plan {
+  name: string;
+  description: string;
+  price: string;
+  features: string[];
+  button_link: string;
+  button_text: string;
+}
+
+const plans: Plan[] = entry.data.blocks[0].plans;
 ---
 
 <BaseLayout entry={entry}>
