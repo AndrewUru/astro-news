@@ -72,38 +72,34 @@ export const OTHER_LINKS: Link[] = [
   },
   {
     href: "https://astro-news-six.vercel.app/sitemap-index.xml",
-    text: "Sitemap",
+    text: "Mapa del Sitio",
   },
 ];
 
 export const SOCIAL_LINKS: Link[] = [
   {
-    href: "https://github.com",
+    href: "https://github.com/AndrewUru",
     text: "GitHub",
     icon: "github",
   },
+
   {
-    href: "httpe://www.t.me",
-    text: "Telegram",
-    icon: "telegram",
-  },
-  {
-    href: "https://www.instagram.com",
+    href: "https://www.instagram.com/elsaltoweb/",
     text: "Instagram",
     icon: "instagram",
   },
   {
-    href: "https://www.linkedin.com",
+    href: "https://www.linkedin.com/in/andr%C3%A9s-tob%C3%ADo-037b33241/",
     text: "LinkedIn",
     icon: "linkedin",
   },
   {
-    href: "https://www.youtube.com",
+    href: "https://www.youtube.com/@ElSaltoWeb-rk9kc",
     text: "YouTube",
     icon: "youtube",
   },
   {
-    href: "https://www.facebook.com",
+    href: "https://www.facebook.com/profile.php?id=61559127094568",
     text: "Facebook",
     icon: "facebook",
   },
